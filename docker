@@ -1,0 +1,28 @@
+#sudo docker build -t krisha .
+Sending build context to Docker daemon  104.6MB
+Step 1/2 : FROM nginx
+ ---> f6d0b4767a6c
+Step 2/2 : MAINTAINER balakrishna
+ ---> Using cache
+ ---> 61e8c9c97860
+Successfully built 61e8c9c97860
+Successfully tagged krisha:latest
+#sudo docker images
+REPOSITORY                   TAG       IMAGE ID       CREATED          SIZE
+krisha                       latest    61e8c9c97860   27 minutes ago   133MB
+balakrishna246/task1         latest    61e8c9c97860   27 minutes ago   133MB
+balakrishna                  latest    61e8c9c97860   27 minutes ago   133MB
+nginx                        latest    f6d0b4767a6c   7 days ago       133MB
+saimohanreddyt/nginx         latest    f6d0b4767a6c   7 days ago       133MB
+balakrishna246/balakrishna   latest    f6d0b4767a6c   7 days ago       133MB
+balakrishna246/nginx         latest    f6d0b4767a6c   7 days ago       133MB
+#balakrishna@balakrishna-VirtualBox:~$ sudo docker tag 61e8c9c97860 balakrishna246/balakrishna
+balakrishna@balakrishna-VirtualBox:~$ sudo docker push balakrishna246/balakrishna
+Using default tag: latest
+The push refers to repository [docker.io/balakrishna246/balakrishna]
+85fcec7ef3ef: Layer already exists 
+3e5288f7a70f: Layer already exists 
+56bc37de0858: Layer already exists 
+1c91bf69a08b: Layer already exists 
+cb42413394c4: Layer already exists 
+latest: digest: sha256:4542cdae7a53ca173f8007502a596703166ec472ff292d1535bb5ab7ed154944 size: 1362
